@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenue chez Buzness Center</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      padding: 30px;
+    }
+
+    form {
+      background-color: #1e293b;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #0ea5e9;
+      width: 350px;
+    }
+
+    h2, p {
+      text-align: center;
+    }
+
+    label {
+      margin-top: 10px;
+      display: block;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0ea5e9;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .avertissement {
+      background: #dc2626;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="merci.html" method="GET">
+    <h2>Bienvenue chez Buzness Center</h2>
+    <div class="avertissement">
+      🛑 Avertissement 🛑<br>
+      Veuillez bien remplir les champs avec les informations correctes pour éviter le moindre erreur en cas d'urgence.
+    </div>
+
+    <label>Nom :</label>
+    <input type="text" name="nom" required>
+
+    <label>Prénom :</label>
+    <input type="text" name="prenom" required>
+
+    <label>Âge :</label>
+    <input type="number" name="age" required>
+
+    <label>Sexe :</label>
+    <input type="text" name="sexe" required>
+
+    <label>Numéro de téléphone :</label>
+    <input type="tel" name="telephone" required>
+
+    <label>Adresse Email :</label>
+    <input type="email" name="email" required>
+
+    <label>Nom d'utilisateur :</label>
+    <input type="text" name="username" required>
+
+    <label>Mot de passe :</label>
+    <input type="password" name="password" required>
+
+    <button type="submit">Soumettre</button>
+  </form>
+
+</body>
+</html>
